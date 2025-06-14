@@ -43,7 +43,31 @@ enum custom_keycodes {
     BAT_NUM,
     RGB_TEST,
     LINK_TO,
-    KB_SLP
+    KB_SLP,
+
+    // blueonion9000
+
+    // symbols
+    C_LPRTS, // (
+    C_RPRTS,              // )
+    C_LFBRC,              // {
+    C_RFBRC,              // }
+    C_LBRC,               // [
+    C_RBRC,               // ]
+
+    C_CAPS,               // custom caps lock
+    C_SPC,                // layout switcher
+    C_DEFL,               // key to return to default layer
+
+    // graphite
+    G_QUOT,   //   ' _
+    G_COMM,   //   , ?
+    G_DOT,    //   . >
+    G_MINS,   //   - "
+    G_SLSH,   //   / <
+
+    // trnv
+    C_CDOT, //   , . (eng ? /)
 };
 
 #define SYS_PRT                 G(S(KC_3))

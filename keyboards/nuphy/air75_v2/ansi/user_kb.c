@@ -143,7 +143,7 @@ void long_press_key(void) {
                 default_layer_set(1 << 0);
                 keymap_config.nkro = 0;
             } else {
-                default_layer_set(1 << 2);
+                default_layer_set(1 << 1);
                 keymap_config.nkro = 1;
             }
         }
@@ -280,7 +280,7 @@ void dial_sw_scan(void) {
     } else {
         if (dev_info.sys_sw_state != SYS_SW_WIN) {
             f_sys_show = 1;
-            default_layer_set(1 << 2);
+            default_layer_set(1 << 1);
             dev_info.sys_sw_state = SYS_SW_WIN;
             break_all_key();
             keymap_config.nkro = 1;
@@ -352,7 +352,7 @@ void dial_sw_fast_scan(void) {
     } else {
         if (dev_info.sys_sw_state != SYS_SW_WIN) {
             break_all_key();
-            default_layer_set(1 << 2);
+            default_layer_set(1 << 1);
             dev_info.sys_sw_state = SYS_SW_WIN;
             keymap_config.nkro    = 1;
         }
